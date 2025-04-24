@@ -1,0 +1,231 @@
+@use "./variables";
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+// Bubbles
+.bubbles {
+    position: fixed;
+    opacity: 0.9;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.bubbles {
+    pointer-events: none;
+  }
+  
+  .bubbles:hover {
+    pointer-events: auto;
+  }
+
+.bubble1,
+.bubble2,
+.bubble3,
+.bubble4,
+.bubble5,
+.bubble6,
+.bubble7,
+.bubble8,
+.bubble9,
+.bubble10
+{
+    position: absolute;
+    background-color: variables.$colorBubble;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: inset -7px -7px 15px variables.$colorBubbleInset, 5px 5px 3px variables.$colorBubbleBg;
+    pointer-events: auto; 
+    transition: transform 0.3s ease, opacity 0.6s ease;
+    cursor: pointer;
+    touch-action: auto;
+    user-select: none;
+    -webkit-user-drag: none;
+    will-change: transform;
+}
+
+/* Efeito de explosão */
+.bubble1.explode, .bubble2.explode, .bubble3.explode, .bubble4.explode, .bubble5.explode, .bubble6.explode,
+.bubble7.explode, .bubble8.explode, .bubble9.explode, .bubble10.explode {
+    opacity: 0;
+    transform: scale(3) rotate(720deg);
+}
+
+// Internal Reflexes
+.bubble1:after, .bubble2:after, .bubble3:after, .bubble4:after, .bubble5:after, .bubble6:after,
+.bubble7:after, .bubble8:after, .bubble9:after, .bubble10:after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    transform: rotate(25deg);
+    filter: blur(7px);
+}
+
+.bubble4,
+.bubble9 {
+    box-shadow: inset -5px -5px 8px variables.$colorBubbleInset, 5px 5px 3px variables.$colorBubbleBg;
+}
+
+.bubble1 {
+    width: 100px; 
+    height: 100px;
+    top: 600px; 
+    left: 800px;
+    animation: up 12s linear infinite;
+}
+
+.bubble1:after {
+    background-color: variables.$colorBubbleLight;
+    width: 25px; 
+    height: 50px;
+    left: 15px; 
+    top: 12px;
+}
+
+.bubble2 {
+    width: 50px; 
+    height: 50px;
+    left: 320px; 
+    top: 700px;
+    animation: up 16s linear infinite;
+}
+
+.bubble2:after {
+    background-color: variables.$colorBubbleLighter;
+    width: 12.5px; 
+    height: 25px;
+    left: 15px; 
+    top: 7px;
+}
+
+.bubble3 {
+    width: 80px; 
+    height: 80px;
+    left: 1100px; 
+    top: 800px;
+    animation: up 5s linear infinite;
+}
+
+.bubble3:after {
+    background-color: variables.$colorBubbleLight;
+    width: 20px; 
+    height: 40px;
+    left: 15px; 
+    top: 10px;
+}
+
+.bubble4 {
+    width: 30px; 
+    height: 30px;
+    animation: up 7s linear infinite;
+    left: 800px; 
+    top: 700px;
+}
+
+.bubble4:after {
+    background-color: variables.$colorBubbleStrong;
+    width: 10px; 
+    height: 8px;
+    left: 7px; 
+    top: 5px;
+    filter: blur(5px);
+}
+
+.bubble5 {
+    width: 90px; 
+    height: 90px;
+    left: 150px; 
+    top: 700px;
+    animation: up 13s linear infinite;
+}
+
+.bubble5:after {
+    background-color: variables.$colorBubbleLight;
+    width: 22px; 
+    height: 48px;
+    left: 15px; 
+    top: 12px;
+}
+
+.bubble6 {
+    width: 70px; 
+    height: 70px;
+    left: 410px; 
+    top: 700px;
+    animation: up 15s linear infinite;
+}
+
+.bubble6:after {
+    background-color: variables.$colorBubbleLight;
+    width: 22px; 
+    height: 48px;
+    left: 15px; 
+    top: 12px;
+}
+
+.bubble7 {
+    width: 50px; 
+    height: 50px;
+    left: 930px; 
+    top: 700px;
+    animation: up 10s linear infinite;
+}
+
+.bubble7:after {
+    background-color: variables.$colorBubbleLighter;
+    width: 12.5px; 
+    height: 25px;
+    left: 15px; 
+    top: 7px;
+}
+
+.bubble8 {
+    width: 80px; 
+    height: 80px;
+    left: 1100px; 
+    top: 800px;
+    animation: up 8s linear infinite;
+}
+
+.bubble8:after {
+    background-color: variables.$colorBubbleLight;
+    width: 20px; 
+    height: 40px;
+    left: 15px; 
+    top: 10px;
+}
+
+.bubble9 {
+    width: 30px; 
+    height: 30px;
+    left: 600px; 
+    top: 50%;
+    animation: up 17s linear infinite;
+}
+
+.bubble9:after {
+    background-color: variables.$colorBubbleStrong;
+    width: 10px; 
+    height: 8px;
+    left: 7px; 
+    top: 5px;
+    filter: blur(5px);
+}
+
+.bubble10 {
+    width: 90px; 
+    height: 90px;
+    left: 110px; 
+    top: 700px;
+    animation: up 4s linear infinite;
+}
+
+.bubble10:after {
+    background-color: variables.$colorBubbleLight;
+    width: 22px; 
+    height: 48px;
+    left: 15px; 
+    top: 12px;
+}
+
+@keyframes up {
+    100% { transform: translateY(-1000px); }
+}

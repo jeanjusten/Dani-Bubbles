@@ -1,0 +1,23 @@
+{
+  "type": "module",
+  "name": "gulp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass src/styles/main.scss build/styles/style.css --watch",
+    "sass:build": "sass src/styles/main.scss build/styles/style.css",
+    "gulp": "npm run gulp"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.5",
+    "sass": "^1.86.3"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-webp": "^5.0.0"
+  }
+}

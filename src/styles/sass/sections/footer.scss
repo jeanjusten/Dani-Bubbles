@@ -1,0 +1,106 @@
+@use "../variables";
+
+#info {
+    background-color: variables.$colorFooterPrimary;
+    border-top: 3px solid !important;
+    border-bottom: 3px solid !important;
+    border-color: variables.$colorFooterBorder !important;
+    color: variables.$colorFooterText;
+}
+
+.follow-us-footer {
+    color: variables.$colorFooterText;
+}
+
+#info-container {
+    background-color: variables.$colorFooterPrimary;
+    color: variables.$colorFooterText;
+    border-color: variables.$colorFooterPrimary;
+}
+
+#footer-foot-note {
+    background-color: variables.$colorFooterPrimary;
+    padding-bottom: 1rem;
+}
+
+.footer-menu1, 
+.footer-menu1 p, 
+.footer-menu1 a,
+#footer-foot-note span {
+    color: variables.$colorFooterText !important;
+}
+
+#footer-info {
+    text-align: center;
+    color: variables.$colorFooterText;
+
+    p {
+        color: variables.$colorFooterText;
+    }
+
+    span {
+        color: variables.$colorFooterText;
+    }
+}
+
+#footer-logo {
+    max-height: 80px;
+    transition: 0.5s ease-in-out;
+}
+
+#footer-logo:hover {
+    transform: scale(1.05);
+}
+
+.text-reset {
+    transition: ease-in-out 0.2s;
+
+    &:hover {
+        color: variables.$secondaryColor !important;
+    }
+}
+
+#footer-social-links a {
+    text-decoration: none; 
+    margin-right: 5px;
+    transition: ease-in-out 0.2s;
+
+    & svg {
+        color: variables.$svgColorSec;
+        margin-left: 10px !important;
+
+        &:hover {
+            color: variables.$svgColorHover;
+        }
+    }
+}
+
+.contact-footer {
+    vertical-align: center !important;
+    align-items: center;
+    align-content: center;
+    color: variables.$colorFooterText;
+}
+
+#footer-foot-note {
+    color: variables.$colorFooterText;
+    display: flex;
+    font-weight: bold;
+    justify-content: space-around;
+    
+}
+
+#footer-developed-by {
+    font-weight: bold;
+}
+
+#footer-developed-by a {
+    color: variables.$devbyColor;
+    text-decoration: none;
+    transition: 0.5s ease-in-out;
+}
+
+#footer-developed-by a:hover {
+    color: variables.$devbyColorHover;
+    text-decoration: underline;
+}

@@ -1,0 +1,18 @@
+// All Sass files
+@use "./sass/variables"; 
+@use "./sass/mixins/mixins";
+@use "./sass/reset";
+@use "./sass/loading";
+@use "./sass/buttons";
+@use "./sass/body";
+@use "./sass/scroll"; 
+@use "./sass/header";
+@use "./sass/sections/home";
+@use "./sass/bubbles";
+@use "./sass/sections/footer";
+
+// Bootstrap Overwrite Variables
+// Text Color
+body, html, h1, h2, h3, h4, h5, h6, p, span, a, li, ul {
+    color: variables.$textColor;
+}

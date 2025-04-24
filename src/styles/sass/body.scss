@@ -1,0 +1,11 @@
+@use "./variables";
+
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    overflow-x: hidden !important;
+    overflow-y: auto;
+    background-color: variables.$bodyColorPrimary;
+    cursor: url("dist/files/cursor.cur"), auto;
+}

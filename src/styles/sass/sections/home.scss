@@ -1,0 +1,15 @@
+@use "../variables";
+@use "../mixins/mixins";
+
+#home {
+    background-color: variables.$primaryColor;
+
+    .container-home {
+        position: relative;
+        height: calc(100svh - 57px);
+        width: 100%;
+        top: 0; 
+    }
+}
+
+
