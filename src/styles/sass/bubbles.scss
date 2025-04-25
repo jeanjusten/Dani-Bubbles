@@ -65,7 +65,7 @@
     height: 100px;
     top: 600px; 
     left: 800px;
-    animation: up 12s linear infinite;
+    animation: up 14s linear infinite;
 }
 
 .bubble1:after {
@@ -81,7 +81,7 @@
     height: 50px;
     left: 320px; 
     top: 700px;
-    animation: up 16s linear infinite;
+    animation: up 18s linear infinite;
 }
 
 .bubble2:after {
@@ -97,7 +97,7 @@
     height: 80px;
     left: 1100px; 
     top: 800px;
-    animation: up 5s linear infinite;
+    animation: up 7s linear infinite;
 }
 
 .bubble3:after {
@@ -111,7 +111,7 @@
 .bubble4 {
     width: 30px; 
     height: 30px;
-    animation: up 7s linear infinite;
+    animation: up 9s linear infinite;
     left: 800px; 
     top: 700px;
 }
@@ -130,7 +130,7 @@
     height: 90px;
     left: 150px; 
     top: 700px;
-    animation: up 13s linear infinite;
+    animation: up 15s linear infinite;
 }
 
 .bubble5:after {
@@ -146,7 +146,7 @@
     height: 70px;
     left: 410px; 
     top: 700px;
-    animation: up 15s linear infinite;
+    animation: up 17s linear infinite;
 }
 
 .bubble6:after {
@@ -162,7 +162,7 @@
     height: 50px;
     left: 930px; 
     top: 700px;
-    animation: up 10s linear infinite;
+    animation: up 12s linear infinite;
 }
 
 .bubble7:after {
@@ -178,7 +178,7 @@
     height: 80px;
     left: 1100px; 
     top: 800px;
-    animation: up 8s linear infinite;
+    animation: up 10s linear infinite;
 }
 
 .bubble8:after {
@@ -194,7 +194,7 @@
     height: 30px;
     left: 600px; 
     top: 50%;
-    animation: up 17s linear infinite;
+    animation: up 19s linear infinite;
 }
 
 .bubble9:after {
@@ -211,7 +211,7 @@
     height: 90px;
     left: 110px; 
     top: 700px;
-    animation: up 4s linear infinite;
+    animation: up 6s linear infinite;
 }
 
 .bubble10:after {
@@ -231,7 +231,7 @@
         opacity: 1;
     }
     100% {
-        transform: translateY(-1000px);
+        transform: translateY(-1700px);
         opacity: 1;
     }
 }

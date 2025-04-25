@@ -54,6 +54,8 @@ img {
   background-color: transparent;
   border: 3.5px solid white;
   backdrop-filter: blur(10px) !important;
+  letter-spacing: 0.45rem;
+  text-transform: uppercase;
 }
 
 .btn:focus, .btn:active, .btn:focus-visible,
@@ -150,6 +152,7 @@ img {
 }
 
 body {
+  position: relative;
   width: 100%;
   height: 100vh;
   margin: 0;
@@ -188,8 +191,8 @@ header {
   top: 0;
   left: 0;
   background-color: transparent;
-  font-family: "Special Gothic Condensed One", sans-serif;
-  font-weight: 100;
+  font-family: "Outfit", sans-serif, sans-serif;
+  font-weight: 600;
   position: static;
   margin-right: 15px;
 }
@@ -215,9 +218,6 @@ header {
   header {
     background-color: transparent;
     backdrop-filter: blur(10px);
-  }
-  .nav-link.active {
-    background-color: white !important;
   }
 }
 .nav-link {
@@ -250,7 +250,7 @@ header {
 .cta-nav a {
   background-color: #a70471;
   color: white;
-  font-family: "Special Gothic Condensed One", sans-serif;
+  font-family: "Outfit", sans-serif, sans-serif;
   font-weight: 100;
   font-weight: bold;
   text-decoration: none;
@@ -270,7 +270,7 @@ header {
 
 .nav-item a {
   color: white;
-  font-family: "Special Gothic Condensed One", sans-serif;
+  font-family: "Outfit", sans-serif, sans-serif;
   border-bottom: 1px;
 }
 
@@ -313,6 +313,21 @@ header {
   height: calc(100svh - 57px);
   width: 100%;
   top: 0;
+}
+
+.motto-h1 {
+  font-family: "Outfit", sans-serif, sans-serif;
+  font-weight: bolder;
+  font-size: 5rem;
+  line-height: 4rem;
+}
+
+#sobre {
+  height: 700px;
+  background-color: #ea46b3;
+}
+#sobre .container-sobre {
+  max-width: 100%;
 }
 
 .bubbles {
@@ -375,7 +390,7 @@ header {
   height: 100px;
   top: 600px;
   left: 800px;
-  animation: up 12s linear infinite;
+  animation: up 14s linear infinite;
 }
 
 .bubble1:after {
@@ -391,7 +406,7 @@ header {
   height: 50px;
   left: 320px;
   top: 700px;
-  animation: up 16s linear infinite;
+  animation: up 18s linear infinite;
 }
 
 .bubble2:after {
@@ -407,7 +422,7 @@ header {
   height: 80px;
   left: 1100px;
   top: 800px;
-  animation: up 5s linear infinite;
+  animation: up 7s linear infinite;
 }
 
 .bubble3:after {
@@ -421,7 +436,7 @@ header {
 .bubble4 {
   width: 30px;
   height: 30px;
-  animation: up 7s linear infinite;
+  animation: up 9s linear infinite;
   left: 800px;
   top: 700px;
 }
@@ -440,7 +455,7 @@ header {
   height: 90px;
   left: 150px;
   top: 700px;
-  animation: up 13s linear infinite;
+  animation: up 15s linear infinite;
 }
 
 .bubble5:after {
@@ -456,7 +471,7 @@ header {
   height: 70px;
   left: 410px;
   top: 700px;
-  animation: up 15s linear infinite;
+  animation: up 17s linear infinite;
 }
 
 .bubble6:after {
@@ -472,7 +487,7 @@ header {
   height: 50px;
   left: 930px;
   top: 700px;
-  animation: up 10s linear infinite;
+  animation: up 12s linear infinite;
 }
 
 .bubble7:after {
@@ -488,7 +503,7 @@ header {
   height: 80px;
   left: 1100px;
   top: 800px;
-  animation: up 8s linear infinite;
+  animation: up 10s linear infinite;
 }
 
 .bubble8:after {
@@ -504,7 +519,7 @@ header {
   height: 30px;
   left: 600px;
   top: 50%;
-  animation: up 17s linear infinite;
+  animation: up 19s linear infinite;
 }
 
 .bubble9:after {
@@ -521,7 +536,7 @@ header {
   height: 90px;
   left: 110px;
   top: 700px;
-  animation: up 4s linear infinite;
+  animation: up 6s linear infinite;
 }
 
 .bubble10:after {
@@ -541,16 +556,29 @@ header {
     opacity: 1;
   }
   100% {
-    transform: translateY(-1000px);
+    transform: translateY(-1700px);
     opacity: 1;
   }
 }
+.blob {
+  position: absolute;
+  max-width: 60%;
+  top: 0;
+  left: 50%;
+  height: 500px;
+}
+.blob svg path {
+  fill: #fa62c7 !important;
+  color: #fa62c7;
+}
+
 #info {
   background-color: #fd22a4;
   border-top: 3px solid !important;
   border-bottom: 3px solid !important;
   border-color: #a70471 !important;
   color: #ffffff;
+  font-weight: bold;
 }
 
 .follow-us-footer {
@@ -620,6 +648,7 @@ header {
   align-items: center;
   align-content: center;
   color: #ffffff;
+  font-weight: 500;
 }
 
 #footer-foot-note {

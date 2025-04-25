@@ -1,0 +1,15 @@
+@use "./variables";
+
+.blob {
+    position: absolute;
+    max-width: 60%;
+    top: 0;
+    left: 50%;
+    height: 500px;
+
+    svg path {
+        fill: variables.$svgColorBlob !important;
+        color: variables.$svgColorBlob;
+    }
+}
+

@@ -8,7 +8,7 @@ header {
     left: 0;
     background-color: variables.$headerColor;
     font-family: variables.$mainFont;
-    font-weight: 100;
+    font-weight: 600;
     position: static;
     margin-right: 15px;
 }
@@ -34,10 +34,6 @@ header {
     header {
         background-color: variables.$headerColor;
         backdrop-filter: blur(10px);
-    }
-
-    .nav-link.active {
-        background-color: variables.$textColor !important;
     }
 }
 

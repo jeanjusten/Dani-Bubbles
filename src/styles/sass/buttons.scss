@@ -25,6 +25,8 @@
     background-color: transparent;
     border: 3.5px solid variables.$textColor;
     backdrop-filter: blur(10px) !important;
+    letter-spacing: 0.45rem;
+    text-transform: uppercase;
 }
 
 .btn,

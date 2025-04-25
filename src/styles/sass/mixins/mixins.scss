@@ -10,6 +10,13 @@
     max-width: $maxContainerWidth;
 }
 
+@mixin logoFont($fontSize:4rem, $lineHeight: 4rem) {
+    font-family: variables.$mainFont;
+    font-weight: bolder;
+    font-size: $fontSize;
+    line-height: $lineHeight;
+}
+
 @mixin borderRadiusTop($borderRadiusValue:30px) {
     border-top-right-radius: $borderRadiusValue;
     border-top-left-radius: $borderRadiusValue;

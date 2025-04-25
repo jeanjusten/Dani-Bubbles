@@ -1,4 +1,5 @@
 @use "../variables";
+@use "../mixins/mixins";
 
 #info {
     background-color: variables.$colorFooterPrimary;
@@ -6,6 +7,7 @@
     border-bottom: 3px solid !important;
     border-color: variables.$colorFooterBorder !important;
     color: variables.$colorFooterText;
+    font-weight: bold;
 }
 
 .follow-us-footer {
@@ -80,6 +82,7 @@
     align-items: center;
     align-content: center;
     color: variables.$colorFooterText;
+    font-weight: 500;
 }
 
 #footer-foot-note {

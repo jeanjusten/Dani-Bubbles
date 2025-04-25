@@ -1,0 +1,11 @@
+@use "../variables";
+@use "../mixins/mixins";
+
+#sobre {
+    height: 700px;
+    background-color: variables.$bodyColorSecondary;
+
+    .container-sobre {
+        max-width: 100%;
+    }
+}
