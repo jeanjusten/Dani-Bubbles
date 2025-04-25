@@ -12,8 +12,8 @@
 .bubbles {
     pointer-events: none;
 }
-  
-  .bubbles:hover {
+
+.bubbles:hover {
     pointer-events: auto;
 }
 
@@ -41,24 +41,8 @@
 // Exploding effect
 .bubble1.explode, .bubble2.explode, .bubble3.explode, .bubble4.explode, .bubble5.explode, .bubble6.explode,
 .bubble7.explode, .bubble8.explode, .bubble9.explode, .bubble10.explode {
-    opacity: 0;
+    opacity: 0 !important;
     transform: scale(3) rotate(720deg);
-}
-
-// Removing animations from Firefox
-@-moz-document url-prefix() {
-    .bubble1.explode,
-    .bubble2.explode,
-    .bubble3.explode,
-    .bubble4.explode,
-    .bubble5.explode,
-    .bubble6.explode,
-    .bubble7.explode,
-    .bubble8.explode,
-    .bubble9.explode,
-    .bubble10.explode {
-      animation: none !important;
-    }
 }
 
 // Internal Reflexes
@@ -239,5 +223,15 @@
 }
 
 @keyframes up {
-    100% { transform: translateY(-1000px); }
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-1000px);
+        opacity: 1;
+    }
 }

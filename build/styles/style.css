@@ -352,24 +352,10 @@ header {
 
 .bubble1.explode, .bubble2.explode, .bubble3.explode, .bubble4.explode, .bubble5.explode, .bubble6.explode,
 .bubble7.explode, .bubble8.explode, .bubble9.explode, .bubble10.explode {
-  opacity: 0;
+  opacity: 0 !important;
   transform: scale(3) rotate(720deg);
 }
 
-@-moz-document url-prefix() {
-  .bubble1.explode,
-  .bubble2.explode,
-  .bubble3.explode,
-  .bubble4.explode,
-  .bubble5.explode,
-  .bubble6.explode,
-  .bubble7.explode,
-  .bubble8.explode,
-  .bubble9.explode,
-  .bubble10.explode {
-    animation: none !important;
-  }
-}
 .bubble1:after, .bubble2:after, .bubble3:after, .bubble4:after, .bubble5:after, .bubble6:after,
 .bubble7:after, .bubble8:after, .bubble9:after, .bubble10:after {
   content: "";
@@ -547,8 +533,16 @@ header {
 }
 
 @keyframes up {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
   100% {
     transform: translateY(-1000px);
+    opacity: 1;
   }
 }
 #info {
