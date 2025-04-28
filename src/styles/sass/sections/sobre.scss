@@ -2,10 +2,64 @@
 @use "../mixins/mixins";
 
 #sobre {
-    height: 700px;
     background-color: variables.$bodyColorSecondary;
+    position: relative;
+    border-top: 10px solid variables.$bodyColorPrimary;
 
     .container-sobre {
+        height: 100%;
         max-width: 100%;
+        margin-left: 0px;
+        padding-left: 0px;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+
+        div {
+            align-items: center;
+            margin: 0 auto;
+            gap: 5px;
+
+            h2 {
+                text-transform: uppercase;
+                font-size: 3rem;
+            }
+
+            #bubbles-about {
+                max-height: 45px;
+                transition: ease-in-out 0.5s;
+                margin-bottom: 10px;
+
+                &:hover {
+                    transform: scale(1.05);
+                }
+            }
+        }
+    }
+
+    .bottom-left-image {
+        overflow: hidden;
+        height: auto;
+        width: auto;
+        min-height: 600px;
+        max-width: 1000px; 
+        pointer-events: none;
+        object-fit: contain;
+        object-position: left bottom;
+        filter: saturate(1.45) contrast(1.15);
     }
 }
+
+@media (max-width: 991px) {
+    .container-right-about {
+        max-width: 100%;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container-right-about {
+        max-width: 40%;
+    }
+}
+

@@ -19,6 +19,7 @@
 @media (max-width: 760px) {
     .motto-h1 {
         @include mixins.logoFont(4rem, 4rem);
+        z-index: 2;
     }
     
     .logo-text-cup {
@@ -31,6 +32,7 @@
     .motto-h1-bottom {
         @include mixins.logoFont(4rem, 2rem);
         margin-bottom: 1.2rem;
+        z-index: 2;
     }
 }
 
@@ -41,6 +43,7 @@
     
         .motto-h1 {
             @include mixins.logoFont(8rem, 8rem);
+            z-index: 2;
         }
         
         .logo-text-cup {
@@ -54,6 +57,7 @@
     .motto-h1-bottom {
         @include mixins.logoFont(8rem, 4rem);
         margin-bottom: 2.2rem;
+        z-index: 2;
     }
 }
 

@@ -20,6 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // WhatsApp Link API Replace Default Message
     [
         "contact-whatsapp-hero",
+        "contact-whatsapp-about",
         "contact-whatsapp-svg",
         "contact-whatsapp-footer"
     ].forEach(id => {

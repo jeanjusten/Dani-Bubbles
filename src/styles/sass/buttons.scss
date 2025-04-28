@@ -26,6 +26,8 @@
     border: 3.5px solid variables.$textColor;
     backdrop-filter: blur(10px) !important;
     letter-spacing: 0.45rem;
+    padding: 8px 20px;
+    padding-top: 10px;
     text-transform: uppercase;
 }
 
@@ -51,6 +53,7 @@
     transition: ease-in-out 0.5s;
     backdrop-filter: blur(10px);
     padding: 5px 15px;
+    padding-top: 10px;
     text-transform: uppercase;
 
     &:hover {
